@@ -46,9 +46,7 @@ def count_xmas_from_square(grid: list[list[str]], y: int, x: int) -> int:
 
 def part_one(my_input: list[str]):
     total = 0
-    puzzle_grid = []
-    for line in my_input:
-        puzzle_grid.append(list(line))
+    puzzle_grid = [list(line) for line in my_input]
 
     for y in range(len(puzzle_grid)):
         for x in range(len(puzzle_grid[y])):
@@ -77,9 +75,7 @@ def is_square_x_mas(grid: list[list[str]], y: int, x: int) -> bool:
 
 def part_two(my_input):
     total = 0
-    puzzle_grid = []
-    for line in my_input:
-        puzzle_grid.append(list(line))
+    puzzle_grid = [list(line) for line in my_input]
 
     for y in range(len(puzzle_grid)):
         for x in range(len(puzzle_grid[y])):
